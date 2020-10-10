@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="635.0" prefWidth="920.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funeralapp.main.controllers.CustomerInformationController">
+    <stylesheets>
+        <URL value="@/com/funeralapp/main/css/customerinformation.css" />
+    </stylesheets>
+   <children>
+      <Pane />
+      <VBox layoutX="7.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="927.0">
+               <children>
+                  <Label alignment="CENTER" text="View and Edit Customer Information">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="927.0" spacing="10.0">
+               <padding>
+                  <Insets left="25.0" right="32.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="506.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="50.0" prefWidth="57.0">
+                           <children>
+                              <Label text="Title">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="title" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="50.0" prefWidth="134.0">
+                           <children>
+                              <Label text="First Name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="firstName" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 0;" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="50.0" prefWidth="134.0">
+                           <children>
+                              <Label text="Middle Name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="middleName" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 0;" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="50.0" prefWidth="134.0">
+                           <children>
+                              <Label text="Last Name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="lastName" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 0;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="747.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="50.0" prefWidth="356.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Email">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="email" prefHeight="25.0" prefWidth="120.0" style="-fx-border-radius: 0;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="69.0" prefHeight="50.0" prefWidth="927.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="489.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="50.0" prefWidth="119.0">
+                           <children>
+                              <Label text="ID Number">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="idNumber" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="50.0" prefWidth="105.0">
+                           <children>
+                              <Label text="Marital Status">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="maritalStatus" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="50.0" prefWidth="135.0">
+                           <children>
+                              <Label text="Date of Birth">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="dateOfBirth" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="262.0" layoutY="10.0" prefHeight="50.0" prefWidth="145.0">
+                           <children>
+                              <Label text="Policy No.">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="policyNumber" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="747.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="50.0" prefWidth="74.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Phone">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="phoneNumber" maxWidth="-Infinity" prefHeight="25.0" prefWidth="117.0" style="-fx-border-radius: 0;" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="82.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Cell">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="cellNumber" maxWidth="-Infinity" prefHeight="25.0" prefWidth="127.0" style="-fx-border-radius: 0;" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="84.0" layoutY="10.0" prefHeight="50.0" prefWidth="82.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Alternative">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="altNumber" maxWidth="-Infinity" prefHeight="25.0" prefWidth="124.0" style="-fx-border-radius: 0;" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="25.0" right="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <TabPane prefHeight="235.0" prefWidth="927.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Address">
+                     <content>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Physical Address">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <TextArea prefHeight="62.0" prefWidth="442.0" />
+                                    <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="442.0" spacing="10.0">
+                                       <children>
+                                          <TextField HBox.hgrow="ALWAYS" />
+                                          <TextField layoutX="10.0" layoutY="22.0" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <TextField maxWidth="-Infinity" prefHeight="25.0" prefWidth="97.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Address">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <TextArea prefHeight="62.0" prefWidth="442.0" />
+                                    <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="442.0" spacing="10.0">
+                                       <children>
+                                          <TextField HBox.hgrow="ALWAYS" />
+                                          <TextField layoutX="10.0" layoutY="22.0" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <TextField maxWidth="-Infinity" prefHeight="25.0" prefWidth="97.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </content>
+                </Tab>
+                <Tab text="Spouse Details" />
+                  <Tab text="Dependents">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Banking Details">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+              </tabs>
+               <VBox.margin>
+                  <Insets right="30.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </TabPane>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="25.0" right="30.0" />
+               </padding>
+            </Separator>
+            <HBox prefHeight="65.0" prefWidth="957.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton defaultButton="true" prefHeight="35.0" prefWidth="90.0" ripplerFill="#c3c3c3" text="Close">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton prefHeight="35.0" prefWidth="90.0" text="Save">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding></HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

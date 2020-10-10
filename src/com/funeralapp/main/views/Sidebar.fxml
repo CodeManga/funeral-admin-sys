@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="sidebar" alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="250.0" styleClass="sidebar" stylesheets="@../css/sidebar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funeralapp.main.controllers.SidebarController">
+   <children>
+      <Circle fx:id="profilePic" fill="DODGERBLUE" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Circle>
+      <JFXButton contentDisplay="RIGHT" ripplerFill="#b1b1b5" styleClass="sidebar-user-btn" stylesheets="@../css/sidebar.css" text="Kawaza Mthimunye">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon glyphStyle="-fx-fill:#b8b1b1" iconName="SORT_DESC" size="1.2em" />
+         </graphic>
+      </JFXButton>
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" text="Main" textFill="#b1b1b5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="5.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <children>
+            <FontAwesomeIcon iconName="HOME" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Home" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="142.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="FORUMBEE" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Sales" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="177.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="GROUP" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Suppliers" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="142.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="ARCHIVE" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Inventory" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="282.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="BRIEFCASE" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Funeral Packages" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="247.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="CHAIN_BROKEN" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Cemetery Management" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" text="Admin" textFill="#b1b1b5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="5.0" top="25.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="212.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="USER" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Users" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="CALENDAR" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Event Calender" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="387.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="LINE_CHART" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Reports" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="422.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="250.0" styleClass="sidebar-btn">
+         <children>
+            <FontAwesomeIcon iconName="COGS" size="1.5em" styleClass="sidebar-btn-icon" />
+            <Label text="Settings" textFill="#b1b1b5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

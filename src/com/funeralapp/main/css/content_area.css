@@ -1,0 +1,27 @@
+.content-area {
+    -fx-background-color: #1E1E2F;
+}
+
+.content-area-circle-btns {
+    -fx-background-color: #fff;
+    -fx-background-radius: 100px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 100%;
+    -fx-text-fill: #b8b1b1;
+}
+
+.content-area-circle-btns:hover {
+    -fx-background-color: #3c3c3c;
+    -fx-background-radius: 100px;
+    -fx-border-color: #3c3c3c;
+    -fx-text-fill: #3c3c3c;
+}
+
+.content-area-circle-icon {
+    -fx-fill: #b8b1b1;
+}
+
+.content-area-circle-btns:hover .content-area-circle-icon {
+    -fx-fill: #3c3c3c;
+}
+

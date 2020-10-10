@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" styleClass="dashboard" stylesheets="@../css/dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funeralapp.main.controllers.DashboardController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="menu-top">
+         <children>
+            <VBox alignment="CENTER" prefHeight="98.0" prefWidth="130.0">
+               <children>
+                  <Text fill="#e89508" layoutX="10.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Age" wrappingWidth="127.447265625">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="34.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <FontAwesomeIcon iconName="SEARCH" size="1.8em" styleClass="icons">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <JFXTextField prefHeight="25.0" prefWidth="277.0" promptText="Search" styleClass="word">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <FontAwesomeIcon iconName="BELL" layoutX="956.0" layoutY="62.0" size="1.8em" styleClass="icons">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon iconName="ELLIPSIS_H" layoutX="1006.0" layoutY="62.0" size="1.8em" styleClass="icons">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </FontAwesomeIcon>
+                  <FontAwesomeIcon fx:id="signout" iconName="POWER_OFF" layoutX="958.0" layoutY="62.0" onMouseClicked="#seetingsBtn" size="1.8em" styleClass="power-icon">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant color="#fcd3d3" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </FontAwesomeIcon>
+                  <JFXButton fx:id="pop" onMouseClicked="#seetingsBtn" text="Pop" textFill="#f2ebeb">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="1024.0" spacing="20.0" styleClass="menu-bottom">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Deshboard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="152.0" prefWidth="1024.0" spacing="30.0">
+         <children>
+            <Pane prefHeight="116.0" prefWidth="246.0" styleClass="card" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+               <children>
+                  <HBox layoutX="5.0" prefHeight="132.0" prefWidth="230.0">
+                     <children>
+                        <VBox prefHeight="132.0" prefWidth="166.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Number Of Meetings">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="34545">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="4.0">
+                                 <children>
+                                    <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="2.00%">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#e89508" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="icons" text="(30 days)">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="132.0" prefWidth="66.0">
+                           <children>
+                              <FontAwesomeIcon iconName="CALENDAR_ALT" size="3em" styleClass="icons" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children></Pane>
+            <Pane layoutX="50.0" layoutY="20.0" prefHeight="116.0" prefWidth="246.0" styleClass="card" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox layoutX="5.0" prefHeight="132.0" prefWidth="230.0">
+                     <children>
+                        <VBox prefHeight="132.0" prefWidth="166.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Number Of Meetings">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="34545">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="4.0">
+                                 <children>
+                                    <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="2.00%">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#e89508" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="icons" text="(30 days)">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="132.0" prefWidth="66.0">
+                           <children>
+                              <FontAwesomeIcon iconName="CALENDAR_ALT" size="3em" styleClass="icons" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane layoutX="1164.0" layoutY="10.0" prefHeight="116.0" prefWidth="246.0" styleClass="card" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox layoutX="5.0" prefHeight="132.0" prefWidth="230.0">
+                     <children>
+                        <VBox prefHeight="132.0" prefWidth="166.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Number Of Meetings">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="34545">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="4.0">
+                                 <children>
+                                    <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="2.00%">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#e89508" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="icons" text="(30 days)">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="132.0" prefWidth="66.0">
+                           <children>
+                              <FontAwesomeIcon iconName="CALENDAR_ALT" size="3em" styleClass="icons" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane layoutX="1164.0" layoutY="10.0" prefHeight="116.0" prefWidth="246.0" styleClass="card" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox layoutX="5.0" prefHeight="132.0" prefWidth="230.0">
+                     <children>
+                        <VBox prefHeight="132.0" prefWidth="166.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Number Of Meetings">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="34545">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="4.0">
+                                 <children>
+                                    <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="2.00%">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#e89508" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="icons" text="(30 days)">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="132.0" prefWidth="66.0">
+                           <children>
+                              <FontAwesomeIcon iconName="CALENDAR_ALT" size="3em" styleClass="icons" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane layoutX="1164.0" layoutY="10.0" prefHeight="116.0" prefWidth="246.0" styleClass="card" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox layoutX="5.0" prefHeight="132.0" prefWidth="230.0">
+                     <children>
+                        <VBox prefHeight="132.0" prefWidth="166.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Number Of Meetings">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="34545">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="160.0" spacing="4.0">
+                                 <children>
+                                    <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="2.00%">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#e89508" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="icons" text="(30 days)">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="132.0" prefWidth="66.0">
+                           <children>
+                              <FontAwesomeIcon iconName="CALENDAR_ALT" size="3em" styleClass="icons" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" right="40.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="231.0" prefWidth="1320.0" styleClass="blue-card">
+         <VBox.margin>
+            <Insets bottom="5.0" left="40.0" right="40.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <HBox prefHeight="220.0" prefWidth="481.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="229.0" prefWidth="458.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfomance Overview">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="180.0" prefWidth="478.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <FontAwesomeIcon fill="WHITE" size="4em" />
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="-Infinity" prefHeight="178.0" prefWidth="325.0">
+                                 <children>
+                                    <HBox prefHeight="50.0" prefWidth="298.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients">
+                                             <font>
+                                                <Font size="28.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="55476">
+                                             <font>
+                                                <Font name="System Bold" size="28.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="301.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="+254">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="120.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <FontAwesomeIcon fill="WHITE" iconName="ANGLE_DOWN" size="2em">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.4%">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <Separator maxWidth="-Infinity" prefHeight="4.0" prefWidth="232.0" />
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The total number of sessions within the date range. ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="10.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is the period time a user is actively engaged">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="10.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with your website, page or app, etc">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="220.0" prefWidth="481.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="229.0" prefWidth="458.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfomance Overview">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="180.0" prefWidth="478.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <FontAwesomeIcon fill="WHITE" size="4em" />
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="-Infinity" prefHeight="178.0" prefWidth="325.0">
+                                 <children>
+                                    <HBox prefHeight="50.0" prefWidth="298.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients">
+                                             <font>
+                                                <Font size="28.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="55476">
+                                             <font>
+                                                <Font name="System Bold" size="28.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="301.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="+254">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="120.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <FontAwesomeIcon fill="WHITE" iconName="ANGLE_DOWN" size="2em">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.4%">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <Separator maxWidth="-Infinity" prefHeight="4.0" prefWidth="232.0" />
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The total number of sessions within the date range. ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="10.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is the period time a user is actively engaged">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="10.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with your website, page or app, etc">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="491.0" layoutY="10.0" prefHeight="220.0" prefWidth="481.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="229.0" prefWidth="458.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Perfomance Overview">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="180.0" prefWidth="478.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <FontAwesomeIcon fill="WHITE" size="4em" />
+                                 </children>
+                              </VBox>
+                              <VBox maxWidth="-Infinity" prefHeight="178.0" prefWidth="325.0">
+                                 <children>
+                                    <HBox prefHeight="50.0" prefWidth="298.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients">
+                                             <font>
+                                                <Font size="28.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="55476">
+                                             <font>
+                                                <Font name="System Bold" size="28.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="301.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="+254">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="120.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <FontAwesomeIcon fill="WHITE" iconName="ANGLE_DOWN" size="2em">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                          </FontAwesomeIcon>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.4%">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <Separator maxWidth="-Infinity" prefHeight="4.0" prefWidth="232.0" />
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The total number of sessions within the date range. ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="10.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It is the period time a user is actively engaged">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="10.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with your website, page or app, etc">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="323.0" prefHeight="449.0" prefWidth="1024.0" styleClass="card">
+         <VBox.margin>
+            <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <VBox prefHeight="440.0" prefWidth="1421.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Number Of Meetings">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox prefHeight="400.0" prefWidth="1327.0">
+                     <children>
+                        <VBox prefHeight="240.0" prefWidth="333.0">
+                           <HBox.margin>
+                              <Insets left="50.0" top="80.0" />
+                           </HBox.margin>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="R24 650,00">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Katlehong Branch">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="It is the period time a user is actively engaged with">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="is the period time a user is actively engaged with your">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="website, page or app, etc">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="370.0" prefWidth="404.0">
+                           <HBox.margin>
+                              <Insets left="70.0" top="30.0" />
+                           </HBox.margin>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="404.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="155.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Twala Section">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="248.0">
+                                       <children>
+                                          <ProgressBar prefHeight="18.0" prefWidth="202.0" progress="0.24" styleClass="red-bar" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="69.0">
+                                       <children>
+                                          <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="245">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="404.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="155.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Ncala">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="248.0">
+                                       <children>
+                                          <ProgressBar prefHeight="18.0" prefWidth="202.0" progress="0.69" styleClass="blue-bar" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="69.0">
+                                       <children>
+                                          <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="245">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="55.0" prefHeight="50.0" prefWidth="404.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="155.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Goba">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="248.0">
+                                       <children>
+                                          <ProgressBar prefHeight="18.0" prefWidth="202.0" progress="0.36" styleClass="green-bar" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="69.0">
+                                       <children>
+                                          <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="245">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="100.0" prefHeight="50.0" prefWidth="404.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="155.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Voslorous">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="248.0">
+                                       <children>
+                                          <ProgressBar prefHeight="18.0" prefWidth="202.0" progress="0.92" styleClass="orange-bar" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="69.0">
+                                       <children>
+                                          <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="245">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="50.0" prefWidth="404.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="155.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Tokoza">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="248.0">
+                                       <children>
+                                          <ProgressBar prefHeight="18.0" prefWidth="202.0" progress="0.51" styleClass="yellow-bar" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="69.0">
+                                       <children>
+                                          <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="245">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="190.0" prefHeight="50.0" prefWidth="404.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="155.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Monese">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="248.0">
+                                       <children>
+                                          <ProgressBar prefHeight="18.0" prefWidth="202.0" progress="0.15" styleClass="purple-bar" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="69.0">
+                                       <children>
+                                          <Text fill="#e89508" strokeType="OUTSIDE" strokeWidth="0.0" text="245">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="200.0" prefWidth="1.0">
+                           <HBox.margin>
+                              <Insets left="60.0" top="80.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <VBox prefHeight="400.0" prefWidth="482.0">
+                           <children>
+                              <HBox fx:id="progressBarHBox" alignment="CENTER" prefHeight="154.0" prefWidth="482.0" spacing="20.0">
+                                 <VBox.margin>
+                                    <Insets right="20.0" top="50.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="482.0" spacing="60.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Sales" textAlignment="CENTER" wrappingWidth="77.130859375">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="word" text="Clients Debts" textAlignment="RIGHT" wrappingWidth="152.484375">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

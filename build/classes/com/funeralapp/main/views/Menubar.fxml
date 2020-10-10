@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="menubar" maxHeight="-Infinity" prefHeight="80.0" prefWidth="1024.0" style="-fx-background-color: #fff;" stylesheets="@../css/menubar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funeralapp.main.controllers.MenubarController">
+   <children>
+      <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="menu-bar-btns" stylesheets="@../css/menubar.css">
+         <graphic>
+            <FontAwesomeIcon iconName="TH_LIST" size="2.5em" styleClass="menu-bar-btns-icon" />
+         </graphic>
+      </JFXButton>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="79.0" styleClass="menu-bar-search-field-box" HBox.hgrow="ALWAYS">
+         <children>
+            <FontAwesomeIcon iconName="SEARCH" size="2.5em" styleClass="menu-bar-btns-icon" />
+            <TextField maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="Search" style="-fx-background-color: transparent;" styleClass="menu-bar-search-field" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+         <children>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="menu-bar-btns" stylesheets="@../css/menubar.css">
+               <graphic>
+                  <FontAwesomeIcon iconName="USER" size="2.5em" styleClass="menu-bar-btns-icon" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="menu-bar-btns" stylesheets="@../css/menubar.css">
+               <graphic>
+                  <FontAwesomeIcon iconName="LIST_ALT" size="2.5em" styleClass="menu-bar-btns-icon" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="482.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="80.0" ripplerFill="WHITE" styleClass="menu-bar-btns" stylesheets="@../css/menubar.css">
+               <graphic>
+                  <FontAwesomeIcon iconName="TH" size="2.5em" styleClass="menu-bar-btns-icon" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</HBox>

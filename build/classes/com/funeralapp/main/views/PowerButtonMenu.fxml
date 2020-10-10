@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="120.0" prefWidth="142.0" stylesheets="@../css/powerbuttonmenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funeralapp.main.controllers.PowerButtonMenuController">
+   <children>
+      <JFXButton alignment="CENTER" prefHeight="40.0" prefWidth="151.0" styleClass="top-button" stylesheets="@../css/powerbuttonmenu.css" text="Settings" VBox.vgrow="ALWAYS" />
+      <JFXButton layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="151.0" styleClass="middle-button" text="Profile" VBox.vgrow="ALWAYS" />
+      <JFXButton layoutX="10.0" layoutY="46.0" prefHeight="40.0" prefWidth="151.0" styleClass="bottom-button" text="Logout" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

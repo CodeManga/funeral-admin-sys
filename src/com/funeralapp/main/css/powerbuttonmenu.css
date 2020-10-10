@@ -1,0 +1,33 @@
+.top-button {
+    -fx-border-color: gray;
+    -fx-border-width: 1 1 0 1;
+}
+
+.bottom-button {
+    -fx-border-color: gray;
+    -fx-border-width: 0 1 1 1;
+}
+
+.middle-button {
+    -fx-border-color: gray;
+    -fx-border-width: 0 1 0 1;
+}
+
+.top-button:hover {
+    -fx-border-color: gray;
+    -fx-border-width: 1 1 0 1;
+    -fx-background-color:gray;
+}
+
+.bottom-button:hover  {
+    -fx-border-color: gray;
+    -fx-border-width: 0 1 1 1;
+    -fx-background-color:gray;
+}
+
+
+.middle-button:hover  {
+    -fx-border-color: gray;
+    -fx-border-width: 0 1 0 1;
+    -fx-background-color:gray;
+}

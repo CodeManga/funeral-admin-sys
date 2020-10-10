@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="VBox" fx:id="rootPane" alignment="CENTER_LEFT" prefHeight="480.0" prefWidth="480.0" styleClass="white-pane" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.funeralapp.main.controllers.SignInController">
+   <children>
+      <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="323.0" prefHeight="112.0" prefWidth="480.0">
+         <children>
+            <FontAwesomeIcon fx:id="signInCloseBtn" fill="#333333" iconName="PLUS" onMouseClicked="#closeApp" rotate="45.0" size="2em">
+               <HBox.margin>
+                  <Insets right="30.0" top="10.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <Label text="Sign In" textFill="#f78c7b">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="20.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../css/login.css">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <TextField fx:id="username" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Username" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon fill="#d0d0d0" iconName="USER" size="1.5em" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="263.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+         <children>
+            <TextField fx:id="password" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Password" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIcon fill="#d0d0d0" iconName="LOCK" size="1.5em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="25.0" layoutY="240.0" prefHeight="45.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Forgot Password?" textFill="#868686" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="signInBtn" onAction="#signInMethod" onMouseClicked="#logIn" prefHeight="39.0" prefWidth="120.0" styleClass="pink-btn" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: rgb(247, 140, 123);" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

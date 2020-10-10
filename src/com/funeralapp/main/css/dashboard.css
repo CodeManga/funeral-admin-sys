@@ -1,0 +1,58 @@
+.dashboard {
+    -fx-background-color: #1E1E2F;
+}
+
+.icons {
+    -fx-fill: #b8b1b1;
+}
+
+.menu-top {
+    -fx-background-color: rgb(39, 41, 61);
+    -fx-border-style: none none solid none;
+    -fx-border-width: 1;
+    -fx-border-color: #b8b1b1;
+}
+
+.menu-bottom {
+    -fx-background-color: rgb(39, 41, 61);
+}
+
+.word {
+    -fx-fill: #b8b1b1;
+}
+
+.card {
+    -fx-background-color: rgb(39, 41, 61);
+}
+
+.blue-card {
+    -fx-background-color: rgb(36, 138, 253);
+}
+
+.green-bar  { 
+    -fx-accent: rgb(113, 192, 22);  
+}
+
+.yellow-bar { 
+    -fx-accent: rgb(255, 193, 0); 
+}
+
+.orange-bar { 
+    -fx-accent: rgb(210, 95, 47); 
+}
+
+.red-bar { 
+    -fx-accent: rgb(255, 71, 71);    
+}
+
+.blue-bar {
+    -fx-accent: rgb(36, 138, 253);
+}
+
+.purple-bar {
+    -fx-accent: purple;
+}
+
+.power-icon {
+    -fx-fill: rgb(255, 71, 71);
+}
